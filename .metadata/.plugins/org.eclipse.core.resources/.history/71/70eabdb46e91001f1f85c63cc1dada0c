@@ -1,0 +1,44 @@
+package upeu.edu.pe.CareerClimb.DaoImpl;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import upeu.edu.pe.CareerClimb.Dao.PlanCarreraDao;
+import upeu.edu.pe.CareerClimb.Entity.PlanCarrera;
+import upeu.edu.pe.CareerClimb.Repository.PlanCarreraRepository;
+
+@Component
+public class PlanCarreraDaoImpl implements PlanCarreraDao {
+
+    @Autowired
+    private PlanCarreraRepository planCarreraRepository;
+
+    @Override
+    public PlanCarrera create(PlanCarrera pc) {
+        return planCarreraRepository.save(pc);
+    }
+
+    @Override
+    public PlanCarrera update(PlanCarrera pc) {
+        return planCarreraRepository.save(pc);
+    }
+
+    @Override
+    public void delete(Long id) {
+        planCarreraRepository.deleteById(id);
+    }
+
+    @Override
+    public Optional<PlanCarrera> read(Long id) {
+        return planCarreraRepository.findById(id);
+    }
+
+    @Override
+    public List<PlanCarrera> readAll() {
+        return planCarreraRepository.findAll();
+    }
+}
+

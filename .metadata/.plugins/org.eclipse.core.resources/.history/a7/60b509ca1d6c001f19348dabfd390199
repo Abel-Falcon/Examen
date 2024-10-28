@@ -1,0 +1,9 @@
+package pe.edu.upeu.tarea03.dao;
+
+import pe.edu.upeu.tarea03.entity.Acceso;
+
+public interface AccesosDao {
+	
+	Acceso
+
+}

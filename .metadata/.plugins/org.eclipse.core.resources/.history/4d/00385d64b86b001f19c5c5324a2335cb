@@ -1,0 +1,14 @@
+package pe.edu.upeu.tarea03.entity;
+
+@
+public class Empleado {
+	
+	private Long id;
+	private String nombres;
+	private String apellidos;
+	private int documento;
+	private int telefono;
+	private String correo;
+	private char estado;
+
+}

@@ -1,0 +1,5 @@
+package pe.edu.upeu.tarea03.repository;
+
+public interface AccesoRepository {
+
+}
